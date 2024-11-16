@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+
+![image](https://github.com/user-attachments/assets/55b543f5-a291-49eb-9b65-0bfb16567630)
+
+This is an Count Incrementor making use of basic JavaScript Event Listerners and making the changes in data  as per users need.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
