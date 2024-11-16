@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #1d2d44;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.head{
   color: white;
+  font-size: 4rem;
+  text-shadow: 2px 2px gray;
 }
 
-.App-link {
-  color: #61dafb;
+/**********************************************************************************************/
+
+.box{
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{ 
+  padding-left: 550px; 
+}
+
+.centerpos{
+  padding-left: 140px;
+  padding-top: 160px;
+}
+
+
+.centerbox{
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  height: 250px;
+  width: 250px;
+  display: block;
+  float: left;
+  box-shadow: 0px 2.98px 7.45px #212529;
+}
+
+.no{
+  color: black;
+  font-size: 4rem;
+  padding-left: 105px;
+  padding-top: 90px;
+  text-shadow: 2px 2px gray;
+}
+
+.pluspos{
+  padding-top: 300px;
+}
+
+.plusbox:hover{
+  cursor: pointer;
+  opacity: 50%;
+}
+
+
+.plusbox{
+  position: absolute;
+  background-color: gray;
+  height: 180px;
+  width: 180px; 
+  box-shadow: 0px 2.98px 7.45px white;
+  border-radius: 50%; 
+}
+
+.minusbox:hover{
+  cursor: pointer;
+  opacity: 50%;
+}
+
+
+.plus{ 
+  color: black;
+  font-size: 4rem;
+  text-shadow: 2px 2px white;
+}
+
+.minuspos{
+  padding-left: 340px;
+}
+
+.minusbox{
+  position: absolute;
+  background-color: gray;
+  height: 180px;
+  width: 180px; 
+  border-radius: 50%; 
+  box-shadow: 0px 2.98px 7.45px white;
+}
+
+.minus{
+    color: black;
+    font-size: 4.5rem;
+    text-shadow: 2px 2px white;
 }

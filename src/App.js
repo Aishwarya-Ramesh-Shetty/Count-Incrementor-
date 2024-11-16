@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default function App(){
+  const [isCount,setIsCount]=React.useState(0)
+
+  function add(){
+    setIsCount(isCount + 1)
+  }
+
+  function sub(){
+    setIsCount(isCount - 1)
+  }
+
+  return(
+    <div className="box">
+      <div className="container">
+        <h1 className="head">Count Incrementor</h1>
+        <div className="centerpos">
+          <div className="centerbox">
+            <h1 className="no">{isCount}</h1>
+          </div>
+        </div>
+        
+        <div className="pluspos">
+          <button className="plusbox" onClick={add}>
+            <h1 className="plus">+</h1>
+          </button>
+        </div>
+        <div className="minuspos">
+          <button className="minusbox " onClick={sub}>
+            <h1 className="minus">-</h1>
+          </button>
+        </div>
+        
+        
+      </div>
+      
+      
+      
     </div>
-  );
+  )
 }
-
-export default App;
